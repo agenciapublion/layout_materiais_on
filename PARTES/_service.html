@@ -1,0 +1,30 @@
+<%
+  users = [
+    %{avatar: "150", name: "Mateus Rodrigues", local: "São Paulo - SP", job: "Chaveiro"},
+    %{avatar: "160", name: "Carlos Eduardo", local: "São Paulo - SP", job: "Eletricista"}
+  ]
+%>
+<div class="w-full max-w-sm  rounded border border-secondary mx-4 pb-5 my-4">
+  <div class="bg-secondary rounded rounded-bl-none rounded-br-none flex lg:px-5 py-3 border-solid border-gray-300 last:border-r-0">
+    <div class="w-full text-center px-2 text-sm lg:text-lg text-white font-bold">Elétrico</div>
+  </div>
+  <div class="flex flex-col">
+  <%= Enum.map(users, fn x ->%>
+      <div class="p-4 flex justify-between items-center border border-gray-300 border-solid border-l-0 border-r-0 border-b-0 first:border-t-0  ">
+        <div class="w-1/4 text-center">
+          <img class=" inline-block h-18 w-18 rounded-full ring-2 ring-white m-auto" src="https://i.pravatar.cc/<%= x.avatar %>" />
+        </div>
+        <div class="w-3/4 p-3 px-8 text-left">
+          <div class="text-secondary text-sm font-bold uppercase whitespace-nowrap"><%= x.name %></div>
+          <div class="text-gray-500 text-xs"><%= x.local %></div>
+          <div class="text-gray-500 text-sm mt-4 font-bold"><%= x.job %></div>
+        </div>
+      </div>
+  <% end) %>
+  </div>
+  <div class="flex justify-center items-center">
+    <div class="transition rounded bg-secondary py-3 px-6 cursor-pointer text-white">
+      Comprar
+    </div>
+  </div>
+</div>

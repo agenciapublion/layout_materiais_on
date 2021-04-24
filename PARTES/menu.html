@@ -1,0 +1,57 @@
+<header x-data="{ mobileMenuOpen : false }" class="relative w-full flex flex-col z-50 relative md:fixed sm:relative bg-white pin-t pin-r pin-l ">
+  <div class="bg-primary flex justify-center p-2 text-white   text-sm">
+    <span>Contato por Whatsapp  11 1111-1111
+  </div>
+  <nav id="site-menu" class="container mx-auto max-w-screen-xl flex flex-wrap sm:flex-nowrap px-4 py-1 bg-white" @click.away="mobileMenuOpen = false" >
+    <div class="flex flex-row justify-center items-center m-auto">
+      <a href="#1" class="no-underline py-1 w-24 md:w-24 lg:w-36">
+        <img src="/images/material_on.png" class="min-w-full" />
+      </a>
+      
+    </div>
+    <div class="flex flex-col w-full ">
+      
+      <div id="menu_search" class="flex-col sm:flex-row flex w-full sm:w-5/6 lg:w-full items-center h-full px-4 py-5">
+      <div @click="mobileMenuOpen = !mobileMenuOpen" class="p-3  hidden sm:inline-block lg:hidden " type="button">
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+        <form class="flex w-full" action="#search">
+          <input  
+            type="text" 
+            placeholder="Digite para pesquisar"
+            class="rounded rounded-tr-none rounded-br-none border-2 border-blue-400 focus:border-blue-400 p-2 sm:p-4 w-full"
+          />
+          <button class="rounded bg-secondary p-2 text-white px-8 -mx-0.5 flex justify-center items-center">
+            <i class="fas fa-search text-md sm:text-2xl"></i>
+          </button>
+        </form>
+        <div class="flex-col justify-center items-center px-8 text-center w-80 hidden lg:flex">
+          <div class="text-md">Bem - Vindo</div>
+          <a class="text-primary hover:text-blue-500 font-semibold w-full no-underline text-xs" href="/login.html">Login ou Cadastre-se</a>
+        </div>
+        <div class="flex flex-row p-4 sm:p-0">
+          <div class="rounded text-secondary p-2 text-white px-4 -mx-0.5">
+              <i class="fas fa-heart text-md sm:text-2xl"></i> <span class="inline-block sm:hidden"> Favoritos </span>
+          </div>
+          <div class="rounded text-secondary p-2 text-white px-4 -mx-0.5">
+              <i class="fas fa-shopping-bag text-md sm:text-2xl"></i> <span class="inline-block sm:hidden"> Carrinho </span>
+          </div>
+          <div class="p-2 text-secondary inline-block sm:hidden " type="button"  @click="mobileMenuOpen = !mobileMenuOpen">
+          <i class="fas fa-bars text-md sm:text-2xl pointer-events-none"></i>
+        </div>
+        </div>
+      </div>
+      <div class=" w-screen absolute left-0 top-60 sm:top-36 border-2 border-primary hidden lg:left-0 lg:top-0 lg:w-full lg:border-0 lg:relative lg:flex lg:px-4"  :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}">
+        <div class="w-full sm:w-5/12 lg:w-full p-5 pb-10  bg-white sm:w-auto self-end sm:self-center flex flex-col items-start lg:flex-row lg:items-center h-full lg:py-1 lg:pb-4 ">
+          <a class="text-md px-2 py-2 flex " 
+             href="javascript://"><div class="px-3">Todos os departamentos</div> <i class="fas fa-chevron-down my-1"></i></a>
+          <%= Enum.map([{"Inicio", "/"}, {"Orçamento", "orcamento.html"}, {"Produtos", "produtos.html"}, {"Serviços", "servicos.html"}, {"Fornecedores", "fornecedores.html"}, {"Contato", "contato.html"}, {"Quero Vender", "quero-vender.html"}], fn {x, y} -> %>
+            <a class="text-md px-3 py-2 hover:text-blue-800" href="<%= y %>"><%= x %></a>
+          <% end) %>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<header class="relative hidden md:inline-block h-0 sm:h-24 lg:h-40" >
+</header>

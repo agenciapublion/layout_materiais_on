@@ -1,0 +1,14 @@
+<div class="w-full rounded border border-secondary md:w-6/5 " >
+  <div class="p-3 bg-secondary rounded rounded-bl-none rounded-br-none flex lg:px-5 py-2 border-solid border-gray-300 last:border-r-0">
+     <i class="fas fa-bars"></i>
+    <div class="text-justify px-2 text-sm lg:text-md">Categorias</div>
+  </div>
+  <div class="flex flex-col">
+  <%= Enum.map(["Banheiros","Climatização e Ventilação","Decoração","Ferragens","Ferramentas", "Iluminação", "Madeiras"], fn x ->%>
+    <div class="p-4 flex justify-between">
+      <%= x %>
+      <i class="fas fa-chevron-right text-grey-200"></i>
+    </div>
+  <% end) %>
+  </div>
+</div>
