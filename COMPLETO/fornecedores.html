@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)./fornecedores.html -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrução Materiais ON</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+</head>
+  <body>
+<header x-data="{ mobileMenuOpen : false }" class="relative w-full flex flex-col z-50 relative md:fixed sm:relative bg-white pin-t pin-r pin-l ">
+  <div class="bg-primary flex justify-center p-2 text-white   text-sm">
+    <span>Contato por Whatsapp  11 1111-1111
+  </span></div>
+  <nav id="site-menu" class="container mx-auto max-w-screen-xl flex flex-wrap sm:flex-nowrap px-4 py-1 bg-white" @click.away="mobileMenuOpen = false">
+    <div class="flex flex-row justify-center items-center m-auto">
+      <a href="./fornecedores.html#1" class="no-underline py-1 w-24 md:w-24 lg:w-36">
+        <img src="./images/material_on.png" class="min-w-full">
+      </a>
+      
+    </div>
+    <div class="flex flex-col w-full ">
+      
+      <div id="menu_search" class="flex-col sm:flex-row flex w-full sm:w-5/6 lg:w-full items-center h-full px-4 py-5">
+      <div @click="mobileMenuOpen = !mobileMenuOpen" class="p-3  hidden sm:inline-block lg:hidden " type="button">
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+        <form class="flex w-full" action="./fornecedores.html#search">
+          <input type="text" placeholder="Digite para pesquisar" class="rounded rounded-tr-none rounded-br-none border-2 border-blue-400 focus:border-blue-400 p-2 sm:p-4 w-full">
+          <button class="rounded bg-secondary p-2 text-white px-8 -mx-0.5 flex justify-center items-center">
+            <i class="fas fa-search text-md sm:text-2xl"></i>
+          </button>
+        </form>
+        <div class="flex-col justify-center items-center px-8 text-center w-80 hidden lg:flex">
+          <div class="text-md">Bem - Vindo</div>
+          <a class="text-primary hover:text-blue-500 font-semibold w-full no-underline text-xs" href="./login.html">Login ou Cadastre-se</a>
+        </div>
+        <div class="flex flex-row p-4 sm:p-0">
+          <div class="rounded text-secondary p-2 text-white px-4 -mx-0.5">
+              <i class="fas fa-heart text-md sm:text-2xl"></i> <span class="inline-block sm:hidden"> Favoritos </span>
+          </div>
+          <div class="rounded text-secondary p-2 text-white px-4 -mx-0.5">
+              <i class="fas fa-shopping-bag text-md sm:text-2xl"></i> <span class="inline-block sm:hidden"> Carrinho </span>
+          </div>
+          <div class="p-2 text-secondary inline-block sm:hidden " type="button" @click="mobileMenuOpen = !mobileMenuOpen">
+          <i class="fas fa-bars text-md sm:text-2xl pointer-events-none"></i>
+        </div>
+        </div>
+      </div>
+      <div class="w-screen absolute left-0 top-60 sm:top-36 border-2 border-primary hidden lg:left-0 lg:top-0 lg:w-full lg:border-0 lg:relative lg:flex lg:px-4" :class="{ &#39;flex&#39; : mobileMenuOpen , &#39;hidden&#39; : !mobileMenuOpen}">
+        <div class="w-full sm:w-5/12 lg:w-full p-5 pb-10  bg-white sm:w-auto self-end sm:self-center flex flex-col items-start lg:flex-row lg:items-center h-full lg:py-1 lg:pb-4 ">
+          <a class="text-md px-2 py-2 flex " href="javascript://"><div class="px-3">Todos os departamentos</div> <i class="fas fa-chevron-down my-1"></i></a>
+
+            <a class="text-md px-3 py-2 hover:text-blue-800" href="./index.html">Inicio</a>
+
+            <a class="text-md px-3 py-2 hover:text-blue-800" href="./orcamento.html">Orçamento</a>
+
+            <a class="text-md px-3 py-2 hover:text-blue-800" href="./produtos.html">Produtos</a>
+
+            <a class="text-md px-3 py-2 hover:text-blue-800" href="./servicos.html">Serviços</a>
+
+            <a class="text-md px-3 py-2 hover:text-blue-800" href="./fornecedores.html">Fornecedores</a>
+
+            <a class="text-md px-3 py-2 hover:text-blue-800" href="./contato.html">Contato</a>
+
+            <a class="text-md px-3 py-2 hover:text-blue-800" href="./quero-vender.html">Quero Vender</a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<header class="relative hidden md:inline-block h-0 sm:h-24 lg:h-40">
+</header>
+
+
+<div class="container mx-auto max-w-screen-xl">
+<section class="py-6 pt-12">
+  <h2 class="text-blue-600 text-3xl font-bold text-center py-4">Fornecedores</h2>
+  <div class="flex">
+    <div class="w-full px-6">
+      <p class="py-4 text-justify">
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim, arcu eros blandit vitae a, volutpat. Fusce hendrerit viverra molestie consectetur. Lorem est mauris neque, molestie adipiscing blandit pellentesque. Bibendum sed non laoreet imperdiet at mi nunc. Suspendisse arcu elit sagittis accumsan libero. Varius ante fusce turpis id in leo eleifend. Arcu nulla cursus enim pulvinar viverra enim, nulla non tortor. Scelerisque orci, dolor a sapien et consectetur. Vitae iaculis elit integer orci. Pharetra ultrices leo fringilla velit risus. Dui dictum netus venenatis commodo ultrices turpis diam, ultrices.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="py-6 pt-12">
+  <div class="flex flex-wrap  justify-center items-center">
+
+
+<div class="w-full max-w-sm  rounded border border-primary-dark mx-4 pb-5 my-4">
+  <div class="bg-primary-dark rounded rounded-bl-none rounded-br-none flex lg:px-5 py-3 border-solid border-gray-300 last:border-r-0">
+    <div class="w-full text-center px-2 text-sm lg:text-lg text-white font-bold">Elétrico</div>
+  </div>
+  <div class="flex flex-col">
+
+      <div class="p-4 flex justify-between items-center border border-gray-300 border-solid border-l-0 border-r-0 border-b-0 first:border-t-0  ">
+        <div class="w-1/4 text-center">
+          <img class=" inline-block h-18 w-18 rounded-full ring-2 ring-white m-auto" src="https://i.pravatar.cc/150">
+        </div>
+        <div class="w-3/4 p-3 px-8 text-left">
+          <div class="text-primary-dark text-sm font-bold uppercase whitespace-nowrap">Mateus Rodrigues</div>
+          <div class="text-gray-500 text-xs">São Paulo - SP</div>
+          <div class="text-gray-500 text-sm mt-4 font-bold">Chaveiro</div>
+        </div>
+      </div>
+
+      <div class="p-4 flex justify-between items-center border border-gray-300 border-solid border-l-0 border-r-0 border-b-0 first:border-t-0  ">
+        <div class="w-1/4 text-center">
+          <img class=" inline-block h-18 w-18 rounded-full ring-2 ring-white m-auto" src="https://i.pravatar.cc/150">
+        </div>
+        <div class="w-3/4 p-3 px-8 text-left">
+          <div class="text-primary-dark text-sm font-bold uppercase whitespace-nowrap">Carlos Eduardo</div>
+          <div class="text-gray-500 text-xs">São Paulo - SP</div>
+          <div class="text-gray-500 text-sm mt-4 font-bold">Eletricista</div>
+        </div>
+      </div>
+
+  </div>
+  <div class="flex justify-center items-center">
+    <div class="transition rounded bg-primary-dark py-3 px-6 cursor-pointer text-white">
+      Comprar
+    </div>
+  </div>
+</div>
+
+
+<div class="w-full max-w-sm  rounded border border-primary-dark mx-4 pb-5 my-4">
+  <div class="bg-primary-dark rounded rounded-bl-none rounded-br-none flex lg:px-5 py-3 border-solid border-gray-300 last:border-r-0">
+    <div class="w-full text-center px-2 text-sm lg:text-lg text-white font-bold">Elétrico</div>
+  </div>
+  <div class="flex flex-col">
+
+      <div class="p-4 flex justify-between items-center border border-gray-300 border-solid border-l-0 border-r-0 border-b-0 first:border-t-0  ">
+        <div class="w-1/4 text-center">
+          <img class=" inline-block h-18 w-18 rounded-full ring-2 ring-white m-auto" src="https://i.pravatar.cc/150">
+        </div>
+        <div class="w-3/4 p-3 px-8 text-left">
+          <div class="text-primary-dark text-sm font-bold uppercase whitespace-nowrap">Mateus Rodrigues</div>
+          <div class="text-gray-500 text-xs">São Paulo - SP</div>
+          <div class="text-gray-500 text-sm mt-4 font-bold">Chaveiro</div>
+        </div>
+      </div>
+
+      <div class="p-4 flex justify-between items-center border border-gray-300 border-solid border-l-0 border-r-0 border-b-0 first:border-t-0  ">
+        <div class="w-1/4 text-center">
+          <img class=" inline-block h-18 w-18 rounded-full ring-2 ring-white m-auto" src="https://i.pravatar.cc/150">
+        </div>
+        <div class="w-3/4 p-3 px-8 text-left">
+          <div class="text-primary-dark text-sm font-bold uppercase whitespace-nowrap">Carlos Eduardo</div>
+          <div class="text-gray-500 text-xs">São Paulo - SP</div>
+          <div class="text-gray-500 text-sm mt-4 font-bold">Eletricista</div>
+        </div>
+      </div>
+
+  </div>
+  <div class="flex justify-center items-center">
+    <div class="transition rounded bg-primary-dark py-3 px-6 cursor-pointer text-white">
+      Comprar
+    </div>
+  </div>
+</div>
+
+
+<div class="w-full max-w-sm  rounded border border-primary-dark mx-4 pb-5 my-4">
+  <div class="bg-primary-dark rounded rounded-bl-none rounded-br-none flex lg:px-5 py-3 border-solid border-gray-300 last:border-r-0">
+    <div class="w-full text-center px-2 text-sm lg:text-lg text-white font-bold">Elétrico</div>
+  </div>
+  <div class="flex flex-col">
+
+      <div class="p-4 flex justify-between items-center border border-gray-300 border-solid border-l-0 border-r-0 border-b-0 first:border-t-0  ">
+        <div class="w-1/4 text-center">
+          <img class=" inline-block h-18 w-18 rounded-full ring-2 ring-white m-auto" src="https://i.pravatar.cc/150">
+        </div>
+        <div class="w-3/4 p-3 px-8 text-left">
+          <div class="text-primary-dark text-sm font-bold uppercase whitespace-nowrap">Mateus Rodrigues</div>
+          <div class="text-gray-500 text-xs">São Paulo - SP</div>
+          <div class="text-gray-500 text-sm mt-4 font-bold">Chaveiro</div>
+        </div>
+      </div>
+
+      <div class="p-4 flex justify-between items-center border border-gray-300 border-solid border-l-0 border-r-0 border-b-0 first:border-t-0  ">
+        <div class="w-1/4 text-center">
+          <img class=" inline-block h-18 w-18 rounded-full ring-2 ring-white m-auto" src="https://i.pravatar.cc/150">
+        </div>
+        <div class="w-3/4 p-3 px-8 text-left">
+          <div class="text-primary-dark text-sm font-bold uppercase whitespace-nowrap">Carlos Eduardo</div>
+          <div class="text-gray-500 text-xs">São Paulo - SP</div>
+          <div class="text-gray-500 text-sm mt-4 font-bold">Eletricista</div>
+        </div>
+      </div>
+
+  </div>
+  <div class="flex justify-center items-center">
+    <div class="transition rounded bg-primary-dark py-3 px-6 cursor-pointer text-white">
+      Comprar
+    </div>
+  </div>
+</div>
+
+
+<div class="w-full max-w-sm  rounded border border-primary-dark mx-4 pb-5 my-4">
+  <div class="bg-primary-dark rounded rounded-bl-none rounded-br-none flex lg:px-5 py-3 border-solid border-gray-300 last:border-r-0">
+    <div class="w-full text-center px-2 text-sm lg:text-lg text-white font-bold">Elétrico</div>
+  </div>
+  <div class="flex flex-col">
+
+      <div class="p-4 flex justify-between items-center border border-gray-300 border-solid border-l-0 border-r-0 border-b-0 first:border-t-0  ">
+        <div class="w-1/4 text-center">
+          <img class=" inline-block h-18 w-18 rounded-full ring-2 ring-white m-auto" src="https://i.pravatar.cc/150">
+        </div>
+        <div class="w-3/4 p-3 px-8 text-left">
+          <div class="text-primary-dark text-sm font-bold uppercase whitespace-nowrap">Mateus Rodrigues</div>
+          <div class="text-gray-500 text-xs">São Paulo - SP</div>
+          <div class="text-gray-500 text-sm mt-4 font-bold">Chaveiro</div>
+        </div>
+      </div>
+
+      <div class="p-4 flex justify-between items-center border border-gray-300 border-solid border-l-0 border-r-0 border-b-0 first:border-t-0  ">
+        <div class="w-1/4 text-center">
+          <img class=" inline-block h-18 w-18 rounded-full ring-2 ring-white m-auto" src="https://i.pravatar.cc/150">
+        </div>
+        <div class="w-3/4 p-3 px-8 text-left">
+          <div class="text-primary-dark text-sm font-bold uppercase whitespace-nowrap">Carlos Eduardo</div>
+          <div class="text-gray-500 text-xs">São Paulo - SP</div>
+          <div class="text-gray-500 text-sm mt-4 font-bold">Eletricista</div>
+        </div>
+      </div>
+
+  </div>
+  <div class="flex justify-center items-center">
+    <div class="transition rounded bg-primary-dark py-3 px-6 cursor-pointer text-white">
+      Comprar
+    </div>
+  </div>
+</div>
+
+
+<div class="w-full max-w-sm  rounded border border-primary-dark mx-4 pb-5 my-4">
+  <div class="bg-primary-dark rounded rounded-bl-none rounded-br-none flex lg:px-5 py-3 border-solid border-gray-300 last:border-r-0">
+    <div class="w-full text-center px-2 text-sm lg:text-lg text-white font-bold">Elétrico</div>
+  </div>
+  <div class="flex flex-col">
+
+      <div class="p-4 flex justify-between items-center border border-gray-300 border-solid border-l-0 border-r-0 border-b-0 first:border-t-0  ">
+        <div class="w-1/4 text-center">
+          <img class=" inline-block h-18 w-18 rounded-full ring-2 ring-white m-auto" src="https://i.pravatar.cc/150">
+        </div>
+        <div class="w-3/4 p-3 px-8 text-left">
+          <div class="text-primary-dark text-sm font-bold uppercase whitespace-nowrap">Mateus Rodrigues</div>
+          <div class="text-gray-500 text-xs">São Paulo - SP</div>
+          <div class="text-gray-500 text-sm mt-4 font-bold">Chaveiro</div>
+        </div>
+      </div>
+
+      <div class="p-4 flex justify-between items-center border border-gray-300 border-solid border-l-0 border-r-0 border-b-0 first:border-t-0  ">
+        <div class="w-1/4 text-center">
+          <img class=" inline-block h-18 w-18 rounded-full ring-2 ring-white m-auto" src="https://i.pravatar.cc/150">
+        </div>
+        <div class="w-3/4 p-3 px-8 text-left">
+          <div class="text-primary-dark text-sm font-bold uppercase whitespace-nowrap">Carlos Eduardo</div>
+          <div class="text-gray-500 text-xs">São Paulo - SP</div>
+          <div class="text-gray-500 text-sm mt-4 font-bold">Eletricista</div>
+        </div>
+      </div>
+
+  </div>
+  <div class="flex justify-center items-center">
+    <div class="transition rounded bg-primary-dark py-3 px-6 cursor-pointer text-white">
+      Comprar
+    </div>
+  </div>
+</div>
+
+
+<div class="w-full max-w-sm  rounded border border-primary-dark mx-4 pb-5 my-4">
+  <div class="bg-primary-dark rounded rounded-bl-none rounded-br-none flex lg:px-5 py-3 border-solid border-gray-300 last:border-r-0">
+    <div class="w-full text-center px-2 text-sm lg:text-lg text-white font-bold">Elétrico</div>
+  </div>
+  <div class="flex flex-col">
+
+      <div class="p-4 flex justify-between items-center border border-gray-300 border-solid border-l-0 border-r-0 border-b-0 first:border-t-0  ">
+        <div class="w-1/4 text-center">
+          <img class=" inline-block h-18 w-18 rounded-full ring-2 ring-white m-auto" src="https://i.pravatar.cc/150">
+        </div>
+        <div class="w-3/4 p-3 px-8 text-left">
+          <div class="text-primary-dark text-sm font-bold uppercase whitespace-nowrap">Mateus Rodrigues</div>
+          <div class="text-gray-500 text-xs">São Paulo - SP</div>
+          <div class="text-gray-500 text-sm mt-4 font-bold">Chaveiro</div>
+        </div>
+      </div>
+
+      <div class="p-4 flex justify-between items-center border border-gray-300 border-solid border-l-0 border-r-0 border-b-0 first:border-t-0  ">
+        <div class="w-1/4 text-center">
+          <img class=" inline-block h-18 w-18 rounded-full ring-2 ring-white m-auto" src="https://i.pravatar.cc/150">
+        </div>
+        <div class="w-3/4 p-3 px-8 text-left">
+          <div class="text-primary-dark text-sm font-bold uppercase whitespace-nowrap">Carlos Eduardo</div>
+          <div class="text-gray-500 text-xs">São Paulo - SP</div>
+          <div class="text-gray-500 text-sm mt-4 font-bold">Eletricista</div>
+        </div>
+      </div>
+
+  </div>
+  <div class="flex justify-center items-center">
+    <div class="transition rounded bg-primary-dark py-3 px-6 cursor-pointer text-white">
+      Comprar
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+</div>
+<footer class="bg-gray-200">
+  <div class="container mx-auto max-w-screen-xl grid grid-cols-1 px-5 lg:px-0 md:grid-cols-2 lg:grid-cols-4 gap-4 py-10">
+    <div class="">
+      <img src="./images/material_on.png" class="mx-auto w-2/5 md:w-2/5">
+    </div>
+    <div class="text-center md:text-left">
+      <div class="text-primary-dark uppercase">NOSSO CONTATO</div>
+      <p class="text-gray-700 pr-0 sm:pr-10 md:pr-0  my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar posuere pulvinar arcu lacinia elementum aliquam.</p>
+    </div>
+    <div class="text-center ml-0 sm:mx-auto md:text-left">
+      <div class="text-primary-dark uppercase">EMPRESA</div>
+      <div class="flex flex-col text-md my-4 text-gray-700">
+        <a href="./fornecedores.html#" class="hover:text-gray-900 mt-1">Quem Somos</a>
+        <a href="./fornecedores.html#" class="hover:text-gray-900 mt-1">Privacidade</a>
+        <a href="./fornecedores.html#" class="hover:text-gray-900 mt-1">Quero Vender</a>
+        <a href="./fornecedores.html#" class="hover:text-gray-900 mt-1">Fornecedor</a>
+      </div>
+    </div>
+    <div class="text-center md:text-left">
+      <div class="text-primary-dark uppercase">NOSSAS REDES</div>
+      <div class="flex text-md my-4 text-gray-700 justify-center md:justify-start items-center">
+        <a href="./fornecedores.html#facebook" class="hover:text-gray-900 mt-1 mx-1"><img src="./images/facebook_icon.png" class="h-10"></a>
+        <a href="./fornecedores.html#linkedin" class="hover:text-gray-900 mt-1 mx-1"><img src="./images/linkedin_icon.png" class="h-10"></a>
+        <a href="./fornecedores.html#twitter" class="hover:text-gray-900 mt-1 mx-1"><img src="./images/twitter_icon.png" class="h-10"></a>
+        <a href="./fornecedores.html#pinterest" class="hover:text-gray-900 mt-1 mx-1"><img src="./images/pinterest_icon.png" class="h-10"></a>
+        <a href="./fornecedores.html#instagram" class="hover:text-gray-900 mt-1 mx-1"><img src="./images/instagram_icon.png" class="h-10"></a>
+      </div>
+    </div>
+  </div>
+ </footer>
+ <div class="text-center text-xs text-gray-500 p-2">
+ Todos os direitos reservados à Contrução Materiais On.com
+ </div>
+  <iframe hidden="" height="0" width="0" src="./images/frame.html"></iframe>
+
+</body></html>

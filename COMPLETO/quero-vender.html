@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)./quero-vender.html -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrução Materiais ON</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    </head>
+  <body>
+<header x-data="{ mobileMenuOpen : false }" class="relative w-full flex flex-col z-50 relative md:fixed sm:relative bg-white pin-t pin-r pin-l ">
+  <div class="bg-primary flex justify-center p-2 text-white   text-sm">
+    <span>Contato por Whatsapp  11 1111-1111
+  </span></div>
+  <nav id="site-menu" class="container mx-auto max-w-screen-xl flex flex-wrap sm:flex-nowrap px-4 py-1 bg-white" @click.away="mobileMenuOpen = false">
+    <div class="flex flex-row justify-center items-center m-auto">
+      <a href="./quero-vender.html#1" class="no-underline py-1 w-24 md:w-24 lg:w-36">
+        <img src="./images/material_on.png" class="min-w-full">
+      </a>
+      
+    </div>
+    <div class="flex flex-col w-full ">
+      
+      <div id="menu_search" class="flex-col sm:flex-row flex w-full sm:w-5/6 lg:w-full items-center h-full px-4 py-5">
+      <div @click="mobileMenuOpen = !mobileMenuOpen" class="p-3  hidden sm:inline-block lg:hidden " type="button">
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+        <form class="flex w-full" action="./quero-vender.html#search">
+          <input type="text" placeholder="Digite para pesquisar" class="rounded rounded-tr-none rounded-br-none border-2 border-blue-400 focus:border-blue-400 p-2 sm:p-4 w-full">
+          <button class="rounded bg-secondary p-2 text-white px-8 -mx-0.5 flex justify-center items-center">
+            <i class="fas fa-search text-md sm:text-2xl"></i>
+          </button>
+        </form>
+        <div class="flex-col justify-center items-center px-8 text-center w-80 hidden lg:flex">
+          <div class="text-md">Bem - Vindo</div>
+          <a class="text-primary hover:text-blue-500 font-semibold w-full no-underline text-xs" href="./login.html">Login ou Cadastre-se</a>
+        </div>
+        <div class="flex flex-row p-4 sm:p-0">
+          <div class="rounded text-secondary p-2 text-white px-4 -mx-0.5">
+              <i class="fas fa-heart text-md sm:text-2xl"></i> <span class="inline-block sm:hidden"> Favoritos </span>
+          </div>
+          <div class="rounded text-secondary p-2 text-white px-4 -mx-0.5">
+              <i class="fas fa-shopping-bag text-md sm:text-2xl"></i> <span class="inline-block sm:hidden"> Carrinho </span>
+          </div>
+          <div class="p-2 text-secondary inline-block sm:hidden " type="button" @click="mobileMenuOpen = !mobileMenuOpen">
+          <i class="fas fa-bars text-md sm:text-2xl pointer-events-none"></i>
+        </div>
+        </div>
+      </div>
+      <div class="w-screen absolute left-0 top-60 sm:top-36 border-2 border-primary hidden lg:left-0 lg:top-0 lg:w-full lg:border-0 lg:relative lg:flex lg:px-4" :class="{ &#39;flex&#39; : mobileMenuOpen , &#39;hidden&#39; : !mobileMenuOpen}">
+        <div class="w-full sm:w-5/12 lg:w-full p-5 pb-10  bg-white sm:w-auto self-end sm:self-center flex flex-col items-start lg:flex-row lg:items-center h-full lg:py-1 lg:pb-4 ">
+          <a class="text-md px-2 py-2 flex " href="javascript://"><div class="px-3">Todos os departamentos</div> <i class="fas fa-chevron-down my-1"></i></a>
+
+            <a class="text-md px-3 py-2 hover:text-blue-800" href="./index.html">Inicio</a>
+
+            <a class="text-md px-3 py-2 hover:text-blue-800" href="./orcamento.html">Orçamento</a>
+
+            <a class="text-md px-3 py-2 hover:text-blue-800" href="./produtos.html">Produtos</a>
+
+            <a class="text-md px-3 py-2 hover:text-blue-800" href="./servicos.html">Serviços</a>
+
+            <a class="text-md px-3 py-2 hover:text-blue-800" href="./fornecedores.html">Fornecedores</a>
+
+            <a class="text-md px-3 py-2 hover:text-blue-800" href="./contato.html">Contato</a>
+
+            <a class="text-md px-3 py-2 hover:text-blue-800" href="./quero-vender.html">Quero Vender</a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<header class="relative hidden md:inline-block h-0 sm:h-24 lg:h-40">
+</header>
+
+
+<div class="container mx-auto max-w-screen-xl">
+<section class="py-6 pt-12">
+  <h2 class="text-blue-600 text-3xl font-bold text-center py-4">Quero Vender</h2>
+  <div class="flex">
+    <div class="w-full px-6">
+      <p class="py-4 text-justify">
+     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nisl, massa sed nibh senectus. Purus, cras sit posuere habitasse. Aliquam egestas egestas porta ullamcorper rhoncus, fermentum integer.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="py-6 pt-12">
+      <div>
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+          
+          <div class="col-span-1 flex flex-col md:flex-col justify-between md:px-0">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1">
+              <div class="px-0 sm:px-0 py-5">
+                <div class=" flex flex-col mt-1 text-sm text-gray-600 justify-center items-center">
+                  <div class="font-bold text-primary uppercase text-2xl"> A SOLUÇÃO PARA VOCÊ</div>
+                  <div class="text-gray-500 text-xl mt-5 text-center w-4/5 md:w-2/5"> Um aplicativo criado para conectar você a novos clientes todo dia.</div>
+                </div>
+              </div>
+              <img src="./images/quero_vender.png" class="w-4/5 md:w-3/5 mx-auto">
+              </div>
+            <div class="px-0 sm:px-0 py-5">
+              <div class="flex flex-col mt-1 text-sm text-gray-600 justify-center items-center">
+                <div class="font-bold text-primary uppercase text-2xl"> COMO FUNCIONA</div>
+                <div class="grid grid-cols-1 md:grid-cols-3 mx-20 mt-10 grid-gaps-4 ">
+                  <div class="flex flex-col justify-start items-center my-5">
+                    <img src="./images/step1.png" class="h-20">
+                    <p class="m-2 text-center text-gray-800"> 
+                    Você faz seu cadastro e nós entramos em contato para finalizar a parceria.
+                    </p>
+                  </div>
+                  <div class="flex flex-col justify-center items-center my-5">
+                    <img src="./images/step2.png" class="h-20">
+                    <p class="m-2 text-center text-gray-800"> 
+                   Você faz seu cadastro e nós entramos em contato para finalizar a parceria.
+                    </p>
+                  </div>
+                  <div class="col-span-1 flex flex-col justify-center items-center my-5">
+                    <img src="./images/step3.png" class="h-20">
+                    <p class="m-2 text-center text-gray-800"> 
+                    Você faz seu cadastro e nós entramos em contato para finalizar a parceria.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-4/5 mx-auto lg:w-full col-span-1 mt-5 bg-gray-200">
+            <form action="./quero-vender.html#" method="POST">
+              <div class="border sm:rounded-md sm:overflow-hidden p-4 ">
+              <h3 class="mt-10 text-lg text-primary-light leading-3 font-bold my-4 text-center">VENHA SER NOSSO PARCEIRO</h3>
+              <div class="h-1 bg-secondary w-2/5 mx-auto -mt-2"></div>
+              <p class="m-5 mt-10 text-left"> 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec lectus tortor etiam lobortis neque, euismod magna sit adipiscing. Nullam in blandit facilisi ornare cras et justo. A eu vel enim scelerisque eleifend lectus arcu enim felis. 
+              </p>
+
+              
+                <div class="px-4 py-5 space-y-6 sm:p-6">
+                  <div class="mt-1 flex rounded-md shadow-sm">
+                    <input type="text" name="fullname" class="rounded border-primary-light border p-3 focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="Nome Completo">
+                  </div>
+                  <div class="mt-1 flex rounded-md shadow-sm">
+                    <input type="text" name="phone" class="rounded border-primary-light border p-3 focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="Telefone">
+                  </div>
+                   <div class="mt-1 flex rounded-md shadow-sm">
+                    <input type="text" name="email" class="rounded border-primary-light border p-3 focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300" placeholder="E-mail">
+                  </div>
+                </div>
+                <div class="px-4 py-3  text-center sm:px-6">
+                  <button type="submit" class="inline-flex justify-center py-2 px-8 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Quero ser um parceiro
+                  </button>
+                </div>
+              </div>
+            </form>
+            <h3 class="mt-10 text-lg text-secondary leading-3 font-bold my-4 text-center">COM A GENTE VOCÊ:</h3>
+            <div class="h-1 bg-secondary w-2/5 mx-auto -mt-2"></div>
+            <div class="mx-20 mt-10 pb-10">
+              <div class="flex justify-start items-center">
+                <img src="./images/vender_icon1.png" class="h-16">
+                <p class="m-5 text-left text-gray-800"> 
+                Reduz seus custos
+                </p>
+              </div>
+              <div class="flex justify-center items-center">
+                <img src="./images/vender_icon2.png" class="h-16">
+                <p class="m-5 text-left text-gray-800"> 
+                Acelera o crescimento da sua empresa alavancando suas vendas
+                </p>
+              </div>
+              <div class="flex justify-center items-center">
+                <img src="./images/vender_icon3.png" class="h-16">
+                <p class="m-5 text-left text-gray-800"> 
+                Amplia sua rede de contatos e torna-se cada vez mais conhecido pelo público
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</section>
+</div>
+<footer class="bg-gray-200">
+  <div class="container mx-auto max-w-screen-xl grid grid-cols-1 px-5 lg:px-0 md:grid-cols-2 lg:grid-cols-4 gap-4 py-10">
+    <div class="">
+      <img src="./images/material_on.png" class="mx-auto w-2/5 md:w-2/5">
+    </div>
+    <div class="text-center md:text-left">
+      <div class="text-primary-dark uppercase">NOSSO CONTATO</div>
+      <p class="text-gray-700 pr-0 sm:pr-10 md:pr-0  my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar posuere pulvinar arcu lacinia elementum aliquam.</p>
+    </div>
+    <div class="text-center ml-0 sm:mx-auto md:text-left">
+      <div class="text-primary-dark uppercase">EMPRESA</div>
+      <div class="flex flex-col text-md my-4 text-gray-700">
+        <a href="./quero-vender.html#" class="hover:text-gray-900 mt-1">Quem Somos</a>
+        <a href="./quero-vender.html#" class="hover:text-gray-900 mt-1">Privacidade</a>
+        <a href="./quero-vender.html#" class="hover:text-gray-900 mt-1">Quero Vender</a>
+        <a href="./quero-vender.html#" class="hover:text-gray-900 mt-1">Fornecedor</a>
+      </div>
+    </div>
+    <div class="text-center md:text-left">
+      <div class="text-primary-dark uppercase">NOSSAS REDES</div>
+      <div class="flex text-md my-4 text-gray-700 justify-center md:justify-start items-center">
+        <a href="./quero-vender.html#facebook" class="hover:text-gray-900 mt-1 mx-1"><img src="./images/facebook_icon.png" class="h-10"></a>
+        <a href="./quero-vender.html#linkedin" class="hover:text-gray-900 mt-1 mx-1"><img src="./images/linkedin_icon.png" class="h-10"></a>
+        <a href="./quero-vender.html#twitter" class="hover:text-gray-900 mt-1 mx-1"><img src="./images/twitter_icon.png" class="h-10"></a>
+        <a href="./quero-vender.html#pinterest" class="hover:text-gray-900 mt-1 mx-1"><img src="./images/pinterest_icon.png" class="h-10"></a>
+        <a href="./quero-vender.html#instagram" class="hover:text-gray-900 mt-1 mx-1"><img src="./images/instagram_icon.png" class="h-10"></a>
+      </div>
+    </div>
+  </div>
+ </footer>
+ <div class="text-center text-xs text-gray-500 p-2">
+ Todos os direitos reservados à Contrução Materiais On.com
+ </div>
+  <iframe hidden="" height="0" width="0" src="./images/frame.html"></iframe>
+
+</body></html>
